@@ -20,5 +20,9 @@ export default class FlexTSTemplatePlugin extends FlexPlugin {
    */
   init(flex: typeof Flex, manager: Flex.Manager) {
     initFeatures(flex, manager);
+    manager.strings.NoTasks = "There are no active tasks Hooray!";
+    manager.strings.TaskHeaderLine = '{{task.attributes.skill}}';
+    manager.strings.TaskLineCallReserved ='FROM: {{task.attributes.from}}';
+    manager.strings.TaskLineSmsReserved = 'FROM: {{task.attributes.from}}';
   }
 }
